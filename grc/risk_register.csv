@@ -1,0 +1,6 @@
+ID,Finding,Likelihood (1-5),Impact (1-5),Score,Rating,Owner,Treatment,Status,Residual
+R-01,Malicious process beaconing/exfiltrating to external host,5,4,20,Critical,IT Security Lead,Mitigate,Process ended; executable deleted; persistence not checked,Medium
+R-02,Unauthorized lookalike admin account,4,5,20,Critical,IAM Owner,Mitigate,Account disabled then removed (verified); credentials of creating account not reset,Medium
+R-03,No egress filtering (TCP 1337 outbound allowed),4,4,16,High,Network Owner,Mitigate,Open,Medium
+R-04,Detection gap (no alert presented for the 1337 traffic; ~14 days between account creation and PCAP),4,3,12,High,SOC Lead,Mitigate,Open,Medium
+R-05,Customer contact data and identifiers exposed; downstream phishing/vishing,4,4,16,High,Privacy/Compliance Lead,Mitigate,Open (client notification and customer guidance recommended),Medium
